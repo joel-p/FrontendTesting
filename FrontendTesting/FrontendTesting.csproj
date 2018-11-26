@@ -66,7 +66,32 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
     <None Include="packages.config" />
+    <None Include="Styles\Components\Molecules\_pagination.scss" />
+    <Content Include="Styles\main.css">
+      <DependentUpon>main.scss</DependentUpon>
+    </Content>
+    <Content Include="Styles\main.min.css">
+      <DependentUpon>main.css</DependentUpon>
+    </Content>
+    <Content Include="Styles\main.scss" />
+    <Content Include="Styles\Base\__base-dir.scss" />
+    <Content Include="Styles\Components\__components-dir.scss" />
+    <Content Include="Styles\Layout\__layout-dir.scss" />
+    <Content Include="Styles\Libs\__libs-dir.scss" />
+    <Content Include="Styles\Libs\_avalanche.scss" />
+    <Content Include="Styles\Layout\_header.scss" />
+    <Content Include="Styles\Layout\_footer.scss" />
+    <Content Include="Styles\Base\_normalize.scss" />
+    <Content Include="Styles\Base\_typography.scss" />
+    <Content Include="Styles\Utils\_variables.scss" />
+    <Content Include="Styles\Components\Atoms\_buttons.scss" />
+    <Content Include="Styles\Components\Organisms\_carousel.scss" />
+    <None Include="Styles\Utils\__utils-dir.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -80,6 +105,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
