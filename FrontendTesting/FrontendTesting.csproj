@@ -71,7 +71,30 @@
       <DependentUpon>compilerconfig.json</DependentUpon>
     </None>
     <None Include="packages.config" />
+    <Content Include="Styles %28old%29\Components\_button.scss" />
+    <Content Include="Styles %28old%29\Elements\_body.scss" />
+    <Content Include="Styles %28old%29\Elements\_headings.scss" />
+    <Content Include="Styles %28old%29\Elements\_input.scss" />
+    <Content Include="Styles %28old%29\Elements\_text.scss" />
+    <Content Include="Styles %28old%29\Generic\_fonts.scss" />
+    <Content Include="Styles %28old%29\Generic\_normalize.scss" />
+    <Content Include="Styles %28old%29\Libs\_avalanche.scss" />
+    <Content Include="Styles %28old%29\main.scss" />
+    <Content Include="Styles %28old%29\Objects\_wrapper.scss" />
+    <Content Include="Styles %28old%29\Settings\settings.scss" />
+    <Content Include="Styles %28old%29\Settings\_breakpoints.scss" />
+    <Content Include="Styles %28old%29\Settings\_colors.scss" />
+    <Content Include="Styles %28old%29\Settings\_margins.scss" />
+    <Content Include="Styles %28old%29\Settings\_typography.scss" />
+    <Content Include="Styles %28old%29\Tools\_breakpoints.scss" />
+    <Content Include="Styles %28old%29\Utils\_aligns.scss" />
+    <Content Include="Styles %28old%29\Utils\_avalanche.scss" />
+    <Content Include="Styles %28old%29\Utils\_hidden.scss" />
+    <Content Include="Styles %28old%29\Utils\_margins.scss" />
+    <Content Include="Styles %28old%29\Utils\_text.scss" />
     <None Include="Styles\Components\Molecules\_pagination.scss" />
+    <Content Include="Styles %28old%29\main.css" />
+    <Content Include="Styles %28old%29\main.min.css" />
     <Content Include="Styles\main.css">
       <DependentUpon>main.scss</DependentUpon>
     </Content>

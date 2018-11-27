@@ -1,0 +1,15 @@
+﻿@import '../Tools/_breakpoints.scss';
+
+@include at-breakpoints('.o-grid--rev') {
+    direction: rtl;
+
+    > .o-grid__item {
+        direction: ltr;
+    }
+}
+
+@include at-breakpoints('.o-grid--auto') {
+    > .o-grid__item {
+        width: auto;
+    }
+}

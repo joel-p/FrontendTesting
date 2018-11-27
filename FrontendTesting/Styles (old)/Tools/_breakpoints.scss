@@ -1,0 +1,36 @@
+﻿@import "../Settings/settings.scss";
+
+$settings-breakpoints: $breakpoints;
+
+@mixin at-breakpoint($breakpoint-names...) {
+    $final-media: ();
+
+    @each $breakpoint-name in $breakpoint-names {
+        @if map-has-key($settings-breakpoints, $breakpoint-name) {
+            $declaration: map-get($settings-breakpoints, $breakpoint-name);
+            $final-media: append($final-media, $declaration);
+        }
+    }
+
+    $media-query: to-string($final-media, ',');
+
+    @media #{$media-query} {
+        @content;
+    }
+}
+
+@mixin at-breakpoints($class) {
+    #{$class} {
+        @content;
+    }
+
+    @each $name, $declaration in $settings-breakpoints {
+        $final-selector: #{$class}\@#{$name};
+
+        @include at-breakpoint($name) {
+            #{$final-selector} {
+                @content;
+            }
+        }
+    }
+}

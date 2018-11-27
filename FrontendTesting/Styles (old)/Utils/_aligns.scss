@@ -1,0 +1,20 @@
+﻿
+
+.u-align {
+
+    &--right {
+        text-align: right !important;
+    }
+
+    &--left {
+        text-align: left !important;
+    }
+
+    &--center {
+        text-align: center !important;
+    }
+
+    &--top{
+        vertical-align: top;
+    }
+}

@@ -1,0 +1,17 @@
+﻿@import '../Settings/settings.scss';
+
+.c-button {
+    padding: 10px 25px;
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    text-transform: uppercase;
+
+    &--square{
+        padding: 13px 25px;
+    }
+
+    &--thin{
+        padding: 5px 25px;
+    }
+}
