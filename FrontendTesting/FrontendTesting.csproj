@@ -92,9 +92,9 @@
     <Content Include="Styles %28old%29\Utils\_hidden.scss" />
     <Content Include="Styles %28old%29\Utils\_margins.scss" />
     <Content Include="Styles %28old%29\Utils\_text.scss" />
+    <Content Include="Styles\Base\_html.scss" />
+    <Content Include="Styles\Base\_forms.scss" />
     <None Include="Styles\Components\Molecules\_pagination.scss" />
-    <Content Include="Styles %28old%29\main.css" />
-    <Content Include="Styles %28old%29\main.min.css" />
     <Content Include="Styles\main.css">
       <DependentUpon>main.scss</DependentUpon>
     </Content>
@@ -111,9 +111,13 @@
     <Content Include="Styles\Layout\_footer.scss" />
     <Content Include="Styles\Base\_normalize.scss" />
     <Content Include="Styles\Base\_typography.scss" />
+    <Content Include="Styles\Layout\_wrapper.scss" />
+    <None Include="Styles\Utils\_functions.scss" />
     <Content Include="Styles\Utils\_variables.scss" />
     <Content Include="Styles\Components\Atoms\_buttons.scss" />
     <Content Include="Styles\Components\Organisms\_carousel.scss" />
+    <Content Include="Styles\Utils\_mixins.scss" />
+    <Content Include="Styles\Utils\_helpers.scss" />
     <None Include="Styles\Utils\__utils-dir.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

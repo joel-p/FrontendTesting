@@ -1,2 +1,5 @@
-﻿body {
+﻿@import "../../Utils/mixins";
+
+body {
+    @include clearfix;
 }

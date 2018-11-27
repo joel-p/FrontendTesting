@@ -1,6 +1,12 @@
-﻿[
+[
   {
     "outputFile": "Styles/main.css",
-    "inputFile": "Styles/main.scss"
+    "inputFile": "Styles/main.scss",
+    "sourceMap": false
+  },
+  {
+    "outputFile": "Styles/Utils/_functions.css",
+    "inputFile": "Styles/Utils/_functions.scss",
+    "sourceMap": false
   }
 ]

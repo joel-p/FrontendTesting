@@ -1,0 +1,50 @@
+﻿@import "mixins";
+
+@include at-breakpoints(u-hide) {
+    display: none !important;
+
+    &.is-active {
+        display: block !important;
+    }
+}
+
+.u-clear {
+    @include clearfix;
+}
+
+.u-text-ellipsis {
+    @include text-ellipsis;
+}
+
+.u-text-center {
+    text-align: center;
+}
+
+.u-text-left {
+    text-align: left;
+}
+
+.u-text-right {
+    text-align: right;
+}
+
+$push-multipliers: "", "half", "double";
+$push-directions: "top", "right", "bottom", "left";
+
+@each $i in $push-multipliers {
+    $multiplier-key: "";
+
+    @if #{nth($i, 1)} != "" {
+        $multiplier-key: -#{nth($i, 1)};
+    }
+
+    @include at-breakpoints(u-push#{$multiplier-key}) {
+        @include push("", #{nth($i, 1)});
+    }
+
+    @each $j in $push-directions {
+        @include at-breakpoints(u-push#{$multiplier-key}--#{nth($j, 1)}) {
+            @include push(nth($j, 1), #{nth($i, 1)});
+        }
+    }
+}

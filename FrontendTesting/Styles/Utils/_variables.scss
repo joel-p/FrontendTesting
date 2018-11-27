@@ -1,30 +1,16 @@
-﻿/* TYPOGRAPHY */
-$font-family-default: 'Lato';
+﻿/* BASE */
+$page-gutter: 30px;
 
-$h1-start-size: 56px;
-$h1-lander-size: 46px;
-$h1-size: 32px;
-$h2-size: 20px;
-$h3-size: 15px;
-$default-size: 15px;
-$preamble-size: 22px;
+/* TYPOGRAPHY */
+$font-family-default: "Lato";
+
+$font-size-default: 15px;
 
 /* COLORS */
-$blue: #0065E3;
-$dark-blue: #00459B;
-$light-blue: #6F9EFD;
-$orange: #F77609;
-$dark-orange: #D86300;
-$green: #70C202;
-$dark-green: #5B9E00;
-$grey: #333333;
-$dark-grey: #353947;
-$light-grey: #F1F1F1;
-$whisper-grey: #808080;
-$white: #FFFFFF;
-$black: #000000;
-$yellow: #FFB700;
-$red: #F74D32;
+// http://hslpicker.com
+$blue: hsla(213, 100%, 45%, 1);
+$orange: hsla(27, 94%, 50%, 1);
+$green: hsla(86, 98%, 38%, 1);
 
 /* BREAKPOINTS */
 $palm-breakpoint: "screen and (max-width: 480px)";
@@ -35,4 +21,8 @@ $lap-and-up-breakpoint: "screen and (min-width: 1025px)";
 $desk-breakpoint: "screen and (min-width: 1280px)";
 $desk-and-down-breakpoint: "screen and (max-width: 1280px)";
 
-$breakpoints: ( "desk-and-down": $desk-and-down-breakpoint, "lap": $lap-breakpoint, "lap-and-up": $lap-and-up-breakpoint, "handheld": $handheld-breakpoint, "handheld-and-up": $handheld-and-up-breakpoint, "palm": $palm-breakpoint, "desk": $desk-breakpoint ) !default;
+$breakpoints: ( 
+    "palm": (max-width: 800px),
+    "large": (max-width: 1000px),
+    "huge": (max-width: 1200px)
+);
