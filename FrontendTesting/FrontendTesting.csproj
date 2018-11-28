@@ -113,7 +113,7 @@
     <Content Include="Styles\Base\_typography.scss" />
     <Content Include="Styles\Layout\_wrapper.scss" />
     <None Include="Styles\Utils\_functions.scss" />
-    <Content Include="Styles\Utils\_variables.scss" />
+    <Content Include="Styles\Utils\_settings.scss" />
     <Content Include="Styles\Components\Atoms\_buttons.scss" />
     <Content Include="Styles\Components\Organisms\_carousel.scss" />
     <Content Include="Styles\Utils\_mixins.scss" />

@@ -1,0 +1,27 @@
+﻿/* BASE */
+$page-gutter: 30px;
+
+/* TYPOGRAPHY */
+$font-family-default: "Lato";
+
+$font-size-default: 15px;
+
+/* COLORS */
+// http://hslpicker.com
+$blue: hsla(213, 100%, 45%, 1);
+$orange: hsla(27, 94%, 50%, 1);
+$green: hsla(86, 98%, 38%, 1);
+
+/* BREAKPOINTS */
+$phone-breakpoint: "screen and (max-width: 599px)";
+$tablet-breakpoint: "screen and (min-width: 600px) and (max-width: 899px)";
+$tablet-and-up-breakpoint: "screen and (min-width: 600px)";
+$desk-breakpoint: "screen and (min-width: 900px) and (max-width: 1199px)";
+$desk-and-up-breakpoint: "screen and (min-width: 900px)";
+$desk-wide-and-up-breakpoint: "screen and (min-width: 1200px)";
+
+/*$breakpoints: ( 
+    "palm": (max-width: 599px),
+    "lap": (min-width: 600px) and (max-width: 899px),
+    "desk": (min-width: 900px) and (max-width: 1200px)
+);*/
