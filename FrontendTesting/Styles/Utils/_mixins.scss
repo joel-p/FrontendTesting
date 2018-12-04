@@ -1,19 +1,11 @@
 ﻿@import "variables";
+@import "../Libs/avalanche";
 
 @mixin at-breakpoint($breakpoint-names...) {
-    $final-media: ();
-
     @each $breakpoint-name in $breakpoint-names {
-        @if map-has-key($breakpoints, $breakpoint-name) {
-            $declaration: map-get($breakpoints, $breakpoint-name);
-            $final-media: append($final-media, $declaration);
+        @include av-mq($breakpoint-name) {
+            @content;
         }
-    }
-
-    $media-query: to-string($final-media, ',');
-
-    @media #{$media-query} {
-        @content;
     }
 }
 
@@ -22,8 +14,8 @@
         @content;
     }
 
-    @each $name, $declaration in $breakpoints {
-        $final-selector: #{$class}\@#{$name};
+    @each $name, $declaration in $av-breakpoints {
+        $final-selector: #{$class}--#{$name};
 
         @include at-breakpoint($name) {
             #{$final-selector} {
@@ -45,23 +37,4 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-}
-
-@mixin push($direction, $multiplier-key) {
-    $multiplier: 1;
-
-    @if $multiplier-key == "half" {
-        $multiplier: 0.5;
-    }
-
-    @if $multiplier-key == "double" {
-        $multiplier: 2;
-    }
-
-    @if $direction == "" {
-        margin: $page-gutter * $multiplier;
-    }
-    else {
-        margin-#{$direction}: $page-gutter * $multiplier;
-    }
 }

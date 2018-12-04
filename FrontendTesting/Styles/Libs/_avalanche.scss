@@ -11,8 +11,8 @@ $av-breakpoint-class-chain: '--' !default;        // Chain characters between wi
 
 $av-gutter:                 20px !default;        // Gutter between grid cells
 
-$av-width-class-namespace:  '' !default;          // Prefix namespace for width classes. For example; 'col-'
-$av-width-class-style:      'fraction' !default;  // Width class naming style. Can be 'fraction', 'percentage' or 'fragment'
+$av-width-class-namespace:  'u-' !default;          // Prefix namespace for width classes. For example; 'col-'
+$av-width-class-style:      'fragment' !default;  // Width class naming style. Can be 'fraction', 'percentage' or 'fragment'
 $av-widths: (
   2,
   3,
