@@ -1,7 +1,7 @@
 ﻿/* TYPOGRAPHY */
-$font-family-default: "Lato";
+$font-family-default: "Lato" !default;
 
-$font-size-default: 15;
+$font-size-default: 15 !default;
 
 /* COLORS */
 // http://hslpicker.com
@@ -10,8 +10,8 @@ $green-forest: hsla(86, 58%, 38%, 1);
 $green-bright: hsla(86, 100%, 38%, 1);
 
 // Can be overridden in themes
-$color-primary: $green-forest;
-$color-secondary: $blue-deep;
+$color-primary: $green-forest !default;
+$color-secondary: $blue-deep !default;
 
 /* MEDIA QUERIES */
 $media-query-phone: "screen and (max-width: 599px)";
@@ -22,7 +22,7 @@ $media-query-desk-small-and-up: "screen and (min-width: 900px)";
 $media-query-desk-and-up: "screen and (min-width: 1200px)";
 $media-query-retina: "screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx)";
 
-/* AVALANCE OVERRIDES */
+/* AVALANCHE OVERRIDES */
 $av-namespace: "o-grid";
 $av-width-class-style: 'fragment';
 $av-breakpoints: ( 

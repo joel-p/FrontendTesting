@@ -1,4 +1,4 @@
-﻿@import "../Utils/mixins";
+﻿@import "../../_base/Utils/mixins";
 
 h1 {
     @include font-size(40);
@@ -26,6 +26,7 @@ h6 {
 
 a {
     text-decoration: none;
+    color: $color-primary;
 
     &:hover, &:focus, &:active {
 
