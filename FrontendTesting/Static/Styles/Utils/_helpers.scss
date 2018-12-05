@@ -1,0 +1,38 @@
+﻿@import "mixins";
+
+@include at-breakpoints(".u-hide") {
+    display: none !important;
+
+    &.is-active {
+        display: block !important;
+    }
+}
+
+.u-clear {
+    @include clearfix;
+}
+
+.u-text-truncate {
+    @include text-truncate;
+}
+
+$directions: "top", "right", "bottom", "left";
+@for $i from 1 through 6 {
+    @include at-breakpoints(".u-margin--#{$i * 5}") {
+        margin: $i * 5px;
+    }
+
+    @include at-breakpoints(".u-padding--#{$i * 5}") {
+        padding: $i * 5px;
+    }
+
+    @each $direction in $directions {
+        @include at-breakpoints(".u-margin-#{$direction}--#{$i * 5}") {
+            margin-#{$direction}: $i * 5px;
+        }
+
+        @include at-breakpoints(".u-padding-#{$direction}--#{$i * 5}") {
+            padding-#{$direction}: $i * 5px;
+        }
+    }
+}

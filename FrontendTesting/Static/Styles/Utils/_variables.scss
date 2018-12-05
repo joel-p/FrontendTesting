@@ -1,0 +1,36 @@
+﻿/* TYPOGRAPHY */
+$font-family-default: "Lato";
+
+$font-size-default: 15;
+
+/* COLORS */
+// http://hslpicker.com
+$blue-deep: hsla(213, 100%, 35%, 1);
+$green-forest: hsla(86, 58%, 38%, 1);
+$green-bright: hsla(86, 100%, 38%, 1);
+
+// Can be overridden in themes
+$color-primary: $green-forest;
+$color-secondary: $blue-deep;
+
+/* MEDIA QUERIES */
+$media-query-phone: "screen and (max-width: 599px)";
+$media-query-tablet: "screen and (min-width: 600px) and (max-width: 899px)";
+$media-query-tablet-and-up: "screen and (min-width: 600px)";
+$media-query-desk-small: "screen and (min-width: 900px) and (max-width: 1199px)";
+$media-query-desk-small-and-up: "screen and (min-width: 900px)";
+$media-query-desk-and-up: "screen and (min-width: 1200px)";
+$media-query-retina: "screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx)";
+
+/* AVALANCE OVERRIDES */
+$av-namespace: "o-grid";
+$av-width-class-style: 'fragment';
+$av-breakpoints: ( 
+    "phone": $media-query-phone,
+    "tablet": $media-query-tablet,
+    "tablet-and-up": $media-query-tablet-and-up,
+    "desk-small": $media-query-desk-small,
+    "desk-small-and-up": $media-query-desk-small-and-up,
+    "desk-and-up": $media-query-desk-and-up,
+    "retina": $media-query-retina
+);

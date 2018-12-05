@@ -44,60 +44,39 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Web.DynamicData" />
-    <Reference Include="System.Web.Entity" />
-    <Reference Include="System.Web.ApplicationServices" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
-    <Reference Include="System" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Web.Extensions" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Web" />
-    <Reference Include="System.Xml" />
-    <Reference Include="System.Configuration" />
-    <Reference Include="System.Web.Services" />
-    <Reference Include="System.EnterpriseServices" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
     </None>
     <None Include="packages.config" />
-    <Content Include="Styles\Base\_html.scss" />
-    <Content Include="Styles\Base\_forms.scss" />
-    <None Include="Styles\Components\_pagination.scss" />
-    <Content Include="Styles\main.css">
+    <Content Include="Static\Styles\Base\_html.scss" />
+    <Content Include="Static\Styles\Base\_forms.scss" />
+    <None Include="Static\Styles\Components\_pagination.scss" />
+    <Content Include="Static\Styles\main.css">
       <DependentUpon>main.scss</DependentUpon>
     </Content>
-    <Content Include="Styles\main.min.css">
+    <Content Include="Static\Styles\main.min.css">
       <DependentUpon>main.css</DependentUpon>
     </Content>
-    <Content Include="Styles\main.scss" />
-    <Content Include="Styles\Base\__base-dir.scss" />
-    <Content Include="Styles\Components\__components-dir.scss" />
-    <Content Include="Styles\Layout\__layout-dir.scss" />
-    <Content Include="Styles\Libs\__libs-dir.scss" />
-    <Content Include="Styles\Libs\_avalanche.scss" />
-    <Content Include="Styles\Layout\_header.scss" />
-    <Content Include="Styles\Layout\_footer.scss" />
-    <Content Include="Styles\Base\_normalize.scss" />
-    <Content Include="Styles\Base\_typography.scss" />
-    <Content Include="Styles\Layout\_wrapper.scss" />
-    <None Include="Styles\Utils\_functions.scss" />
-    <Content Include="Styles\Utils\_variables.scss" />
-    <Content Include="Styles\Components\_buttons.scss" />
-    <Content Include="Styles\Components\_carousel.scss" />
-    <Content Include="Styles\Utils\_mixins.scss" />
-    <Content Include="Styles\Utils\_helpers.scss" />
-    <None Include="Styles\Utils\__utils-dir.scss" />
+    <Content Include="Static\Styles\main.scss" />
+    <Content Include="Static\Styles\Base\__base-dir.scss" />
+    <Content Include="Static\Styles\Components\__components-dir.scss" />
+    <Content Include="Static\Styles\Layout\__layout-dir.scss" />
+    <Content Include="Static\Styles\Libs\__libs-dir.scss" />
+    <Content Include="Static\Styles\Libs\_avalanche.scss" />
+    <Content Include="Static\Styles\Layout\_header.scss" />
+    <Content Include="Static\Styles\Layout\_footer.scss" />
+    <Content Include="Static\Styles\Base\_normalize.scss" />
+    <Content Include="Static\Styles\Base\_typography.scss" />
+    <Content Include="Static\Styles\Layout\_wrapper.scss" />
+    <Content Include="Static\Styles\Utils\readme.md" />
+    <None Include="Static\Styles\Utils\_functions.scss" />
+    <Content Include="Static\Styles\Utils\_variables.scss" />
+    <Content Include="Static\Styles\Components\_buttons.scss" />
+    <Content Include="Static\Styles\Components\_carousel.scss" />
+    <Content Include="Static\Styles\Utils\_mixins.scss" />
+    <Content Include="Static\Styles\Utils\_helpers.scss" />
+    <None Include="Static\Styles\Utils\__utils-dir.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -106,12 +85,16 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="TestPage.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Static\Public\" />
+    <Folder Include="Static\Scripts\Libs\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

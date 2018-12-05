@@ -1,0 +1,14 @@
+﻿@import "../Utils/variables";
+@import "../Utils/mixins";
+
+:root {
+    font-size: 62.5%; //Makes rem values divide by 10. IE: 2rem = 20px
+
+    html {
+    }
+
+    body {
+        margin: 0;
+        @include font-size($font-size-default);
+    }
+}
