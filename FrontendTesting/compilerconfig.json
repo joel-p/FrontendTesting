@@ -1,14 +1,10 @@
 ﻿[
   {
-    "outputFile": "Static/Styles/Public/public.css",
-    "inputFile": "Static/Styles/Public/public.scss"
+    "outputFile": "Static/Styles/Main/main.css",
+    "inputFile": "Static/Styles/Main/main.scss"
   },
   {
-    "outputFile": "Static/Styles/ThemeExample/theme-example.css",
-    "inputFile": "Static/Styles/ThemeExample/theme-example.scss"
-  },
-  {
-    "outputFile": "Static/Styles/SeparateTemplatesExample/separate-templates-example.css",
-    "inputFile": "Static/Styles/SeparateTemplatesExample/separate-templates-example.scss"
+    "outputFile": "Static/Styles/SubExample/sub-example.css",
+    "inputFile": "Static/Styles/SubExample/sub-example.scss"
   }
 ]

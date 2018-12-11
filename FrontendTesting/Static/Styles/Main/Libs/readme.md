@@ -1,0 +1,1 @@
+﻿Do NOT change any values directly in lib files, instead override in your own separate files.

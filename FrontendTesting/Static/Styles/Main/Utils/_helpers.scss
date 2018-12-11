@@ -1,0 +1,54 @@
+﻿// File for helper classes. 
+// All classes should start with u-
+
+@import "mixins";
+
+@include at-breakpoints(".u-hide") {
+    display: none !important;
+
+    &.is-active {
+        display: block !important;
+    }
+}
+
+.u-clear {
+    @include clearfix;
+}
+
+.u-text-truncate {
+    @include text-truncate;
+}
+
+.u-text-center {
+    text-align: center;
+}
+
+.u-text-left {
+    text-align: left;
+}
+
+.u-text-right {
+    text-align: right;
+}
+
+@for $i from 1 through 6 {
+    @include at-breakpoints(".u-margin--#{$i * 5}") {
+        margin: $i * 5px;
+    }
+
+    @include at-breakpoints(".u-padding--#{$i * 5}") {
+        padding: $i * 5px;
+    }
+
+    $directions: "top", "right", "bottom", "left";
+
+    @each $direction in $directions {
+        @include at-breakpoints(".u-margin-#{$direction}--#{$i * 5}") {
+            margin-#{$direction}: $i * 5px;
+        }
+
+        @include at-breakpoints(".u-padding-#{$direction}--#{$i * 5}") {
+            padding-#{$direction}: $i * 5px;
+        }
+    }
+}

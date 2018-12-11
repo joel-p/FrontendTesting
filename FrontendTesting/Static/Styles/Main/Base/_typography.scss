@@ -1,0 +1,45 @@
+﻿@import "../Utils/mixins";
+@import "../Utils/variables";
+
+h1 {
+    @include font-size(40);
+}
+
+h2 {
+    @include font-size(30);
+}
+
+h3 {
+    @include font-size(25);
+}
+
+h4 {
+    @include font-size(22);
+}
+
+h5 {
+    @include font-size(20);
+}
+
+h6 {
+    @include font-size(18);
+}
+
+a {
+    text-decoration: none;
+    color: $color-primary;
+
+    &:hover, &:focus, &:active {
+    }
+}
+
+p {
+
+}
+
+ul, ol {
+
+    li {
+
+    }
+}

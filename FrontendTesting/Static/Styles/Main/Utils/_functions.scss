@@ -1,0 +1,11 @@
+﻿// Slightly lighten a color
+// Gives better result than lighten()
+@function tint($color, $percentage) {
+    @return mix(white, $color, $percentage);
+}
+
+// Slightly darken a color
+// Gives better result than darken()
+@function shade($color, $percentage) {
+    @return mix(black, $color, $percentage);
+}

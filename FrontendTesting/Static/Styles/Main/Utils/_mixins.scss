@@ -1,0 +1,63 @@
+﻿@import "variables";
+@import "../Libs/avalanche"; 
+  
+@mixin at-breakpoint($breakpoint-names...) {
+    @each $breakpoint-name in $breakpoint-names {
+        @include av-mq($breakpoint-name) {
+            @content;
+        }
+    }
+}
+
+@mixin at-breakpoints($class) {
+    #{$class} {
+        @content;
+    }
+
+    @each $name, $declaration in $av-breakpoints {
+        $final-selector: #{$class}--#{$name};
+
+        @include at-breakpoint($name) {
+            #{$final-selector} {
+                @content;
+            }
+        }
+    }
+}
+
+@mixin clearfix {
+    &::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin text-truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+// Pass font-size in px and converts to rem.
+// Example: @include font-size:15);
+@mixin font-size($size) {
+    font-size: #{$size}px;
+    font-size: #{$size / 10}rem;
+}
+
+// Used to omit a specific direction property by passing 'null'.
+// Can be used instead of standard 'margin:' to avoid having to override props
+// Example: @include margin(1px, 2px, null, 4px);
+@mixin margin($top, $right, $bottom, $left) {
+    margin-top: $top;
+    margin-right: $right;
+    margin-bottom: $bottom;
+    margin-left: $left;
+}
+@mixin padding($top, $right, $bottom, $left) {
+    padding-top: $top;
+    padding-right: $right;
+    padding-bottom: $bottom;
+    padding-left: $left;
+} 

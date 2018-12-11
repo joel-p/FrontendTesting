@@ -49,72 +49,55 @@
       <DependentUpon>compilerconfig.json</DependentUpon>
     </None>
     <None Include="packages.config" />
-    <Content Include="Static\Styles\Public\Base\_html.scss" />
-    <Content Include="Static\Styles\Public\Base\_forms.scss" />
-    <None Include="Static\Styles\Public\Components\_pagination.scss" />
-    <Content Include="Static\Styles\Public\public.css">
-      <DependentUpon>public.scss</DependentUpon>
+    <Content Include="Static\Styles\Main\Base\_html.scss" />
+    <Content Include="Static\Styles\Main\Base\_typography.scss" />
+    <Content Include="Static\Styles\Main\Base\_media.scss" />
+    <None Include="Static\Styles\Main\Components\_pagination.scss" />
+    <Content Include="Static\Styles\Main\Base\__base-dir.scss" />
+    <Content Include="Static\Styles\Main\Components\__components-dir.scss" />
+    <Content Include="Static\Styles\Main\Layout\__layout-dir.scss" />
+    <Content Include="Static\Styles\Main\main.css">
+      <DependentUpon>main.scss</DependentUpon>
     </Content>
-    <Content Include="Static\Styles\Public\public.min.css">
-      <DependentUpon>public.css</DependentUpon>
+    <Content Include="Static\Styles\Main\main.min.css">
+      <DependentUpon>main.css</DependentUpon>
     </Content>
-    <Content Include="Static\Styles\Public\public.scss" />
-    <Content Include="Static\Styles\Public\Base\__base-dir.scss" />
-    <Content Include="Static\Styles\Public\Components\__components-dir.scss" />
-    <Content Include="Static\Styles\Public\Layout\__layout-dir.scss" />
-    <Content Include="Static\Styles\SeparateTemplatesExample\separate-templates-example.css">
-      <DependentUpon>separate-templates-example.scss</DependentUpon>
+    <Content Include="Static\Styles\Main\Libs\__libs-dir.scss" />
+    <Content Include="Static\Styles\Main\Libs\_avalanche.scss" />
+    <Content Include="Static\Styles\Main\Layout\_header.scss" />
+    <Content Include="Static\Styles\Main\Layout\_footer.scss" />
+    <Content Include="Static\Styles\Main\Layout\_wrapper.scss" />
+    <Content Include="Static\Styles\Main\readme.md" />
+    <Content Include="Static\Styles\Main\Base\_normalize.scss" />
+    <Content Include="Static\Styles\SubExample\Base\__base-dir.scss" />
+    <Content Include="Static\Styles\SubExample\Base\_typography.scss" />
+    <Content Include="Static\Styles\SubExample\Components\__components-dir.scss" />
+    <Content Include="Static\Styles\SubExample\Components\_buttons.scss" />
+    <Content Include="Static\Styles\SubExample\Components\_carousel.scss" />
+    <Content Include="Static\Styles\SubExample\Components\_pagination.scss" />
+    <Content Include="Static\Styles\SubExample\Layout\__layout-dir.scss" />
+    <Content Include="Static\Styles\SubExample\Layout\_footer.scss" />
+    <Content Include="Static\Styles\SubExample\Layout\_header.scss" />
+    <Content Include="Static\Styles\SubExample\sub-example.css">
+      <DependentUpon>sub-example.scss</DependentUpon>
     </Content>
-    <Content Include="Static\Styles\SeparateTemplatesExample\separate-templates-example.min.css">
-      <DependentUpon>separate-templates-example.css</DependentUpon>
+    <Content Include="Static\Styles\SubExample\sub-example.min.css">
+      <DependentUpon>sub-example.css</DependentUpon>
     </Content>
-    <Content Include="Static\Styles\ThemeExample\theme-example.css">
-      <DependentUpon>theme-example.scss</DependentUpon>
-    </Content>
-    <Content Include="Static\Styles\ThemeExample\theme-example.min.css">
-      <DependentUpon>theme-example.css</DependentUpon>
-    </Content>
-    <Content Include="Static\Styles\_base\Libs\__libs-dir.scss" />
-    <Content Include="Static\Styles\_base\Libs\_avalanche.scss" />
-    <Content Include="Static\Styles\Public\Layout\_header.scss" />
-    <Content Include="Static\Styles\Public\Layout\_footer.scss" />
-    <Content Include="Static\Styles\Public\Base\_typography.scss" />
-    <Content Include="Static\Styles\Public\Layout\_wrapper.scss" />
-    <Content Include="Static\Styles\_base\readme.md" />
-    <Content Include="Static\Styles\_base\Base\_html.scss" />
-    <Content Include="Static\Styles\_base\Base\__base-dir.scss" />
-    <Content Include="Static\Styles\_base\Base\_normalize.scss" />
-    <Content Include="Static\Styles\ThemeExample\Base\__base-dir.scss" />
-    <Content Include="Static\Styles\ThemeExample\Base\_typography.scss" />
-    <Content Include="Static\Styles\ThemeExample\Components\__components-dir.scss" />
-    <Content Include="Static\Styles\ThemeExample\Components\_buttons.scss" />
-    <Content Include="Static\Styles\ThemeExample\Components\_carousel.scss" />
-    <Content Include="Static\Styles\ThemeExample\Components\_pagination.scss" />
-    <Content Include="Static\Styles\ThemeExample\theme-example.scss" />
-    <Content Include="Static\Styles\ThemeExample\Utils\_variables.scss" />
-    <Content Include="Static\Styles\SeparateTemplatesExample\Base\__base-dir.scss" />
-    <Content Include="Static\Styles\SeparateTemplatesExample\Base\_typography.scss" />
-    <Content Include="Static\Styles\SeparateTemplatesExample\Components\__components-dir.scss" />
-    <Content Include="Static\Styles\SeparateTemplatesExample\Components\_buttons.scss" />
-    <Content Include="Static\Styles\SeparateTemplatesExample\Components\_carousel.scss" />
-    <Content Include="Static\Styles\SeparateTemplatesExample\Components\_pagination.scss" />
-    <Content Include="Static\Styles\SeparateTemplatesExample\Layout\__layout-dir.scss" />
-    <Content Include="Static\Styles\SeparateTemplatesExample\Layout\_footer.scss" />
-    <Content Include="Static\Styles\SeparateTemplatesExample\Layout\_header.scss" />
-    <Content Include="Static\Styles\SeparateTemplatesExample\Utils\_variables.scss" />
-    <Content Include="Static\Styles\SeparateTemplatesExample\separate-templates-example.scss" />
-    <Content Include="Static\Styles\SeparateTemplatesExample\Base\_html.scss" />
-    <Content Include="Static\Styles\SeparateTemplatesExample\Layout\_wrapper.scss" />
-    <Content Include="Static\Styles\SeparateTemplatesExample\readme.md" />
-    <Content Include="Static\Styles\ThemeExample\readme.md" />
-    <None Include="Static\Styles\_base\Utils\_functions.scss" />
-    <Content Include="Static\Styles\_base\Utils\_variables.scss" />
-    <Content Include="Static\Styles\Public\Components\_buttons.scss" />
-    <Content Include="Static\Styles\Public\Components\_carousel.scss" />
-    <Content Include="Static\Styles\_base\Utils\_mixins.scss" />
-    <Content Include="Static\Styles\_base\Utils\_helpers.scss" />
-    <None Include="Static\Styles\_base\Utils\__utils-dir.scss" />
-    <Content Include="Static\Styles\_base\_base.scss" />
+    <Content Include="Static\Styles\SubExample\Utils\_variables.scss" />
+    <Content Include="Static\Styles\SubExample\sub-example.scss" />
+    <Content Include="Static\Styles\SubExample\Layout\_wrapper.scss" />
+    <Content Include="Static\Styles\SubExample\readme.md" />
+    <Content Include="Static\Styles\Main\Libs\readme.md" />
+    <Content Include="Static\Styles\Main\Themes\_blue.scss" />
+    <None Include="Static\Styles\Main\Utils\_functions.scss" />
+    <Content Include="Static\Styles\Main\Utils\_variables.scss" />
+    <Content Include="Static\Styles\Main\Components\_buttons.scss" />
+    <Content Include="Static\Styles\Main\Components\_carousel.scss" />
+    <Content Include="Static\Styles\Main\Utils\_mixins.scss" />
+    <Content Include="Static\Styles\Main\Utils\_helpers.scss" />
+    <None Include="Static\Styles\Main\Utils\__utils-dir.scss" />
+    <Content Include="Static\Styles\Main\main.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -123,16 +106,12 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="TestPage.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Static\Scripts\Libs\" />
-    <Folder Include="Static\Scripts\Public\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
